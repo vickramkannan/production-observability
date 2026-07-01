@@ -34,7 +34,7 @@ async def log_requests(request: Request, call_next):
         "level": "INFO",
         "ts": time.time(),
         "path": request.url.path,
-        "request_id": request_id
+        "request_id": request_id,
     }
 
     logs.append(entry)
